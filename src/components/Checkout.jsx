@@ -22,7 +22,7 @@ const Checkout = () => {
                 <div className="row g-5">
                     <div className="col-md-5 col-lg-4 order-md-last">
                         <h4 className="d-flex justify-content-between align-items-center mb-3">
-                            <span className="text-primary">Your cart</span>
+                            <span className="text-primary">Tu carrito</span>
                             <span className="badge bg-primary rounded-pill">{state.length}</span>
                         </h4>
                         <ul className="list-group mb-3">
@@ -36,90 +36,90 @@ const Checkout = () => {
 
                         <form className="card p-2">
                             <div className="input-group">
-                                <input type="text" className="form-control" placeholder="Promo code" />
-                                <button type="submit" className="btn btn-secondary">Redeem</button>
+                                <input type="text" className="form-control" placeholder="Código de promoción" />
+                                <button type="submit" className="btn btn-secondary">Aplicar</button>
                             </div>
                         </form>
                     </div>
                     <div className="col-md-7 col-lg-8">
-                        <h4 className="mb-3">Billing address</h4>
+                        <h4 className="mb-3">Dirección de envío</h4>
                         <form className="needs-validation" novalidate="">
                             <div className="row g-3">
                                 <div className="col-sm-6">
-                                    <label htmFor="firstName" className="form-label">First name</label>
+                                    <label htmFor="firstName" className="form-label">Nombre</label>
                                     <input type="text" className="form-control" id="firstName" placeholder="" value="" required="" />
                                     <div className="invalid-feedback">
-                                        Valid first name is required.
+                                        El Nombre es requerido.
                                     </div>
                                 </div>
 
                                 <div className="col-sm-6">
-                                    <label htmFor="lastName" className="form-label">Last name</label>
+                                    <label htmFor="lastName" className="form-label">Apellido</label>
                                     <input type="text" className="form-control" id="lastName" placeholder="" value="" required="" />
                                     <div className="invalid-feedback">
-                                        Valid last name is required.
+                                        El apellido es requerido
                                     </div>
                                 </div>
 
                                 <div className="col-12">
-                                    <label htmFor="username" className="form-label">Username</label>
+                                    <label htmFor="username" className="form-label">Usuario</label>
                                     <div className="input-group has-validation">
                                         <span className="input-group-text">@</span>
-                                        <input type="text" className="form-control" id="username" placeholder="Username" required="" />
+                                        <input type="text" className="form-control" id="username" placeholder="Usuario" required="" />
                                         <div className="invalid-feedback">
-                                            Your username is required.
+                                            Tu usuario es requerido,
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="col-12">
-                                    <label htmFor="email" className="form-label">Email <span className="text-body-secondary">(Optional)</span></label>
+                                    <label htmFor="email" className="form-label">Correo electrónico <span className="text-body-secondary">(Opcional)</span></label>
                                     <input type="email" className="form-control" id="email" placeholder="you@example.com" />
                                     <div className="invalid-feedback">
-                                        Please enter a valid email address htmFor shipping updates.
+                                        Ingresa un correo electrónico para el envío de su factura.
                                     </div>
                                 </div>
 
                                 <div className="col-12">
-                                    <label htmFor="address" className="form-label">Address</label>
+                                    <label htmFor="address" className="form-label">Dirección</label>
                                     <input type="text" className="form-control" id="address" placeholder="1234 Main St" required="" />
                                     <div className="invalid-feedback">
-                                        Please enter your shipping address.
+                                        Por favor ingrese su dirección de envío.
                                     </div>
                                 </div>
 
                                 <div className="col-12">
-                                    <label htmFor="address2" className="form-label">Address 2 <span className="text-body-secondary">(Optional)</span></label>
-                                    <input type="text" className="form-control" id="address2" placeholder="Apartment or suite" />
+                                    <label htmFor="address2" className="form-label">Dirección 2 <span className="text-body-secondary">(Opcional)</span></label>
+                                    <input type="text" className="form-control" id="address2" placeholder="Apartamento o suite" />
                                 </div>
 
                                 <div className="col-md-5">
-                                    <label htmFor="country" className="form-label">Country</label>
+                                    <label htmFor="country" className="form-label">País</label>
                                     <select className="form-select" id="country" required="">
-                                        <option value="">Choose...</option>
+                                        <option value="">Escoge...</option>
                                         <option>United States</option>
                                     </select>
                                     <div className="invalid-feedback">
-                                        Please select a valid country.
+                                        Por favor selecciona un país válido
                                     </div>
                                 </div>
 
                                 <div className="col-md-4">
-                                    <label htmFor="state" className="form-label">State</label>
+                                    <label htmFor="state" className="form-label">Estado</label>
                                     <select className="form-select" id="state" required="">
-                                        <option value="">Choose...</option>
+                                        <option value="">Escoge...</option>
                                         <option>California</option>
                                     </select>
                                     <div className="invalid-feedback">
-                                        Please provide a valid state.
+                                        Por favor selecciona un estado válido
                                     </div>
                                 </div>
 
                                 <div className="col-md-3">
-                                    <label htmFor="zip" className="form-label">Zip</label>
+                                    <label htmFor="zip" className="form-label">Zip/Código postal</label>
                                     <input type="text" className="form-control" id="zip" placeholder="" required="" />
                                     <div className="invalid-feedback">
-                                        Zip code required.
+                                        Zip/Código postal requerido
                                     </div>
                                 </div>
                             </div>
@@ -128,26 +128,26 @@ const Checkout = () => {
 
                             <div className="form-check">
                                 <input type="checkbox" className="form-check-input" id="same-address" />
-                                <label className="form-check-label" htmFor="same-address">Shipping address is the same as my billing address</label>
+                                <label className="form-check-label" htmFor="same-address">La dirección de envío es la misma que la dirección de facturación</label>
                             </div>
 
                             <div className="form-check">
                                 <input type="checkbox" className="form-check-input" id="save-info" />
-                                <label className="form-check-label" htmFor="save-info">Save this information htmFor next time</label>
+                                <label className="form-check-label" htmFor="save-info">Guardar esta facturación para una próxima compra</label>
                             </div>
 
                             <hr className="my-4" />
 
-                            <h4 className="mb-3">Payment</h4>
+                            <h4 className="mb-3">Método de pago</h4>
 
                             <div className="my-3">
                                 <div className="form-check">
-                                    <input id="credit" name="paymentMethod" type="radio" className="form-check-input" checked="" required="" />
-                                    <label className="form-check-label" htmFor="credit">Credit card</label>
+                                    <input id="credit" name="paymentMethod" type="radio" className="form-check-input" required="" />
+                                    <label className="form-check-label" htmFor="credit">Tarjeta de credito</label>
                                 </div>
                                 <div className="form-check">
                                     <input id="debit" name="paymentMethod" type="radio" className="form-check-input" required="" />
-                                    <label className="form-check-label" htmFor="debit">Debit card</label>
+                                    <label className="form-check-label" htmFor="debit">Tarjeta de débito</label>
                                 </div>
                                 <div className="form-check">
                                     <input id="paypal" name="paymentMethod" type="radio" className="form-check-input" required="" />
@@ -157,27 +157,27 @@ const Checkout = () => {
 
                             <div className="row gy-3">
                                 <div className="col-md-6">
-                                    <label htmFor="cc-name" className="form-label">Name on card</label>
+                                    <label htmFor="cc-name" className="form-label">Nombre del propietario</label>
                                     <input type="text" className="form-control" id="cc-name" placeholder="" required="" />
-                                    <small className="text-body-secondary">Full name as displayed on card</small>
+                                    <small className="text-body-secondary">Nombre completo como se muestra en la tarjeta</small>
                                     <div className="invalid-feedback">
-                                        Name on card is required
+                                        Nombre del propietario es requerido
                                     </div>
                                 </div>
 
                                 <div className="col-md-6">
-                                    <label htmFor="cc-number" className="form-label">Credit card number</label>
+                                    <label htmFor="cc-number" className="form-label">Número de la tarjeta</label>
                                     <input type="text" className="form-control" id="cc-number" placeholder="" required="" />
                                     <div className="invalid-feedback">
-                                        Credit card number is required
+                                        Número de la tarjeta es requerido
                                     </div>
                                 </div>
 
                                 <div className="col-md-3">
-                                    <label htmFor="cc-expiration" className="form-label">Expiration</label>
+                                    <label htmFor="cc-expiration" className="form-label">Expiración</label>
                                     <input type="text" className="form-control" id="cc-expiration" placeholder="" required="" />
                                     <div className="invalid-feedback">
-                                        Expiration date required
+                                        La fecha de expiración es requerida
                                     </div>
                                 </div>
 
@@ -185,14 +185,14 @@ const Checkout = () => {
                                     <label htmFor="cc-cvv" className="form-label">CVV</label>
                                     <input type="text" className="form-control" id="cc-cvv" placeholder="" required="" />
                                     <div className="invalid-feedback">
-                                        Security code required
+                                        Código de seguridad es requerido
                                     </div>
                                 </div>
                             </div>
 
                             <hr className="my-4" />
 
-                            <button className="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                            <button className="w-100 btn btn-primary btn-lg" type="submit">Confirmar</button>
                         </form>
                     </div>
                 </div>
