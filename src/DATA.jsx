@@ -123,7 +123,7 @@ const DATA = [
         price: 9.75,
         desc: "Una exploración profunda de la moralidad y la psique humana, donde un estudiante comete un asesinato y luego lucha con su conciencia.",
         "category": "Clásicos",
-        img: "https://static.wixstatic.com/media/761ccc_f917f92f016141ff8a7818583022a384~mv2.webp",
+        img: "https://images.cdn1.buscalibre.com/fit-in/360x360/ea/1f/ea1fc691874fa49ce341d876a981e2c1.jpg",
         rating: {
             rate: 4.5,
             count: 420
